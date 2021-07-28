@@ -1,0 +1,9 @@
+1) Run the application as adminstrator
+
+Or
+
+2) Open command prompt as adminstrator and run following command :
+netsh http add urlacl url=http://+:8733/ user=Everyone
+
+Now application will start without run as adminstrator
+
