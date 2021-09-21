@@ -1,0 +1,8 @@
+USE [master]
+GO
+
+RESTORE DATABASE CORA FROM DISK = 'c\Cora.bak'
+WITH CHECKSUM,
+MOVE ‘Cora’ TO 'c:\mssql\data\yukon\Cora_Data.mdf',
+MOVE 'Cora_Log' TO 'c:\mssql\log\yukon\Cora_Log.ldf',
+RECOVERY, REPLACE, STATS = 10;
