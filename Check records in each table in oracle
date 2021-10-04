@@ -1,4 +1,4 @@
 select owner, table_name, nvl(num_rows,-1) 
 from all_tables 
-where owner = 'SRMSOLSYNCH'
+--where owner = 'OwnerName'
 order by nvl(num_rows,-1) desc
